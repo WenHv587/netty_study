@@ -15,7 +15,6 @@ import java.nio.charset.Charset;
  * @create 2021/7/20 - 17:06
  */
 @Slf4j
-@ChannelHandler.Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
