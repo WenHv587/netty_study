@@ -54,7 +54,7 @@ public class CloseFuture {
         closeFuture.addListener(future -> {
             log.debug("处理关闭之后的操作！");
             // shutdownGracefully()也是异步的，阻塞直到关闭完成。
-            group.shutdownGracefully().syncUninterruptibly();
+            group.shutdownGracefully();
         });
     }
 }

@@ -9,6 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="netty-demo" />
       </profile>
+      <profile name="Annotation profile for netty-demo" enabled="true">
+        <sourceOutputDir name="../netty-demo/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../netty-demo/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="netty-practice" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="netty-practice" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
